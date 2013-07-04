@@ -22,14 +22,14 @@ public:
      * \brief copy ctor
      */
     Deck( 
-            const Deck& other
+            const Deck& other   //!< [in]
         );
 
     /*!
      * \brief assignment operator
      */
     Deck& operator=(
-            const Deck& other
+            const Deck& other   //!< [in]
             );
     
     /*!
@@ -43,22 +43,22 @@ public:
     uint32_t size() const { return _size; }
 
     /*!
-     * \brief
+     * \brief Test if the deck is empty
      */
     bool empty() const { return _size == 0; }
 
     /*!
-     * \brief
+     * \brief Access the top card in the deck
      */
     Card* top() const { return _cards; }
 
     /*!
-     * \brief
+     * \brief Test for equality with another Deck
      */
     bool operator==(const Deck& other) const;
     
     /*!
-     * \brief
+     * \brief Test for inequality with another Deck
      */
     bool operator!=(const Deck& other) const;
 

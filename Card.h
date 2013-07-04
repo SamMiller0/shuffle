@@ -26,8 +26,8 @@ public:
             value_type value
         );
 
-    const value_type _value;
-    Card* _next;
+    const value_type _value;    //!< value of the card
+    Card* _next;                //!< next card in the Deck
 };
 
 std::ostream&

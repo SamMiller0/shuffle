@@ -1,5 +1,8 @@
 #ifndef SHUFFLE_H
 #define SHUFFLE_H
+/*!
+ * \file shuffle.h
+ */
 
 #include <stdint.h>
 
