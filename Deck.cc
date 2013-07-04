@@ -6,7 +6,7 @@
 #include <iostream>
 
 Deck::Deck() :
-    _size( 0),
+    _size( 0 ),
     _cards( NULL )
 {
 
@@ -66,6 +66,7 @@ Deck::operator==(
         const Deck& other
         ) const
 {
+    // two decks are equal if they match in size and every card's value
     if ( other._size != _size ) return false;
 
     Card* mine = _cards;
@@ -102,7 +103,7 @@ Deck::pop_front()
 
 void
 Deck::push_front(
-        Card* card
+        Card* const card
         )
 {
     assert( card );
@@ -113,7 +114,7 @@ Deck::push_front(
 
 void
 Deck::push_back(
-        Card* card
+        Card* const card
         )
 {
     assert( card );
@@ -128,7 +129,6 @@ Deck::push_back(
     while ( c->_next ) {
         c = c->_next;
     }
-    assert( c->_next == NULL );
     c->_next = card;
     card->_next = NULL;
 }

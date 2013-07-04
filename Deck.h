@@ -69,16 +69,20 @@ public:
 
     /*!
      * \brief add a Card to the top of the deck.
+     * 
+     * \pre card != NULL
      */
     void push_front(
-            Card* card
+            Card* const card
             );
 
     /*!
      * \brief add a Card to the bottom of the deck.
+     * 
+     * \pre card != NULL
      */
     void push_back(
-            Card* card
+            Card* const card
             );
 
 private:

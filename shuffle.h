@@ -5,15 +5,21 @@
 
 class Deck;
 
+/*!
+ * \brief shuffle a deck of cards.
+ */
 void
 shuffle(
-        Deck& hand,
-        Deck& table
+        Deck& hand,     //!< [in]
+        Deck& table     //!< [in]
      );
 
+/*!
+ * \brief Count the number of shuffling rounds to return the deck to its starting form.
+ */
 uint32_t
 countRounds(
-        Deck& hand
+        Deck& hand  //!< [in]
         );
 
 #endif
