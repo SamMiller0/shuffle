@@ -28,6 +28,8 @@ test: test_deck test_shuffle | cards
 
 clean:
 	$(RM) *.o $(CARDS) *.d
+	$(RM) -rf html
+	$(RM) test_deck test_shuffle
 
 docs: *.h
 	doxygen 1> /dev/null
