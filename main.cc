@@ -44,4 +44,6 @@ main(int argc, char* argv[])
 
     const uint32_t numRounds = countRounds( deck );
     std::cout << "number of rounds is: " << numRounds << std::endl;
+
+    exit( EXIT_SUCCESS );
 }
